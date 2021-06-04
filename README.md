@@ -1,7 +1,7 @@
 # go-icecream
 A work in progress golang port of icecream for python
 
-# Usage
+## Usage
 ```go
 var hello string = "hello World!"
 icecream.IC(hello)
