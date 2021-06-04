@@ -10,7 +10,8 @@ import (
 )
 
 const (
-	icecreamPrefix string = "ic|"
+	icecreamPrefix string = "🍦|"
+	// icecreamPrefix string = "ic|"
 )
 
 // IC prints in icecream format
@@ -25,13 +26,13 @@ func IC(str string) {
 	}
 
 	var (
-		funcName string = runtime.FuncForPC(pc1).Name()
+		// funcName string = runtime.FuncForPC(pc1).Name()
 		filePath string = file
 		lineNumber int = line
 		callerName string = runtime.FuncForPC(pc2).Name()
 	)
 
-	fmt.Println(funcName, filePath, lineNumber, callerName)
+	// fmt.Println(funcName, filePath, lineNumber, callerName)
 
 	_, args = icecream.CheckBrackets(filePath, lineNumber, strings.Split(callerName, ".")[1])
 

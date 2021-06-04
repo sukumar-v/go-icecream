@@ -9,6 +9,6 @@ icecream.IC(hello)
 
 Output:
 ```
-ic| hello: "hello World!"
+🍦| hello: "hello World!"
   | type: string
 ```
